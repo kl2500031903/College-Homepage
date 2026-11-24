@@ -1,0 +1,242 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #FAF7F2;
+    color: #443B52;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #E8DDF5;
+    color: #443B52;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(80, 60, 100, 0.08);
+}
+
+header h2 {
+    color: #70558F;
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #514461;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A47CCB;
+}
+
+
+/* Home Section */
+
+.hero {
+    background: linear-gradient(135deg, #BBA3D5, #E7CFE8);
+    color: #3E3150;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #8062A5;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #60467F;
+    transform: translateY(-2px);
+}
+
+
+/* Common Sections */
+
+section {
+    padding: 65px 30px;
+    text-align: center;
+}
+
+section h2 {
+    color: #8062A5;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* Courses Table */
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(80, 60, 100, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 17px;
+    border: 1px solid #E9E0EF;
+}
+
+th {
+    background-color: #BBA3D5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F3EDF8;
+}
+
+
+/* Facilities - Flexbox */
+
+.facilities {
+    background-color: #F0EAF5;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.flex-container div {
+    background-color: #DCCBEA;
+    color: #59446E;
+    padding: 35px 20px;
+    width: 190px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(80, 60, 100, 0.08);
+    transition: 0.3s;
+}
+
+.flex-container div:hover {
+    background-color: #C8B0E0;
+    transform: translateY(-7px);
+}
+
+
+/* Contact Form */
+
+#contact {
+    background-color: #FAF7F2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 1px solid #D8C9E5;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #A47CCB;
+    box-shadow: 0 0 5px #DCCBEA;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #70558F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    form {
+        width: 95%;
+    }
+    table {
+        width: 100%;
+    }
+    section {
+        padding: 40px 15px;
+    }
+}
